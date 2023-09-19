@@ -1,0 +1,262 @@
+version: "3.1"
+
+nlu:
+  - intent: faq/login
+    examples: |
+      - login
+      - einloggen
+      - Wie logge ich mich auf der Horstl-Website ein?
+      - Welche Schritte sind erforderlich, um auf Horstl einzuloggen?
+      - Gib mir eine Anleitung zum Einloggen auf der Horstl-Plattform.
+      - Kannst du mir erklären, wie ich mich bei Horstl anmelden kann?
+      - Wie erfolgt der Zugang zur Horstl-Webseite für Studium und Lehre?
+      - Welche Login-Informationen benötige ich, um mich bei Horstl anzumelden?
+      - Könntest du mir den Prozess beschreiben, um in Horstl einzuloggen?
+      - Wo finde ich die Option, um mich auf Horstl einzuloggen?
+      - Gibt es Tipps, wie ich mich reibungslos in Horstl einloggen kann?
+      - Was muss ich tun, um meinen Horstl-Zugang zu aktivieren?
+  - intent: faq/logout
+    examples: |
+      - logout
+      - ausloggen
+      - Wie logge ich mich aus Horstl aus?
+      - Welche Schritte sind notwendig, um von Horstl abzumelden?
+      - Kannst du mir erklären, wie ich meine Sitzung bei Horstl beende?
+      - Wie beende ich meine Verbindung zu Horstl?
+      - Wo finde ich die Option, um mich bei Horstl abzumelden?
+      - Gibt es Tipps, wie ich mich sicher aus Horstl ausloggen kann?
+      - Was muss ich tun, um meine Horstl-Sitzung zu beenden?
+      - Welche Schritte sind erforderlich, um meinen Horstl-Account zu schließen?
+      - Kannst du mir den Prozess beschreiben, um mich von Horstl abzumelden?
+      - Wie erfolgt die Abmeldung von meinem Horstl-Konto?
+  - intent: faq/stundenplan
+    examples: |
+      - Stundenplan
+      - Stundenplan sehen
+      - Wie kann ich meinen Stundenplan anzeigen?
+      - Wo finde ich meinen aktuellen Stundenplan?
+      - Gibt es eine Möglichkeit, meinen Stundenplan einzusehen?
+      - Wie erhalte ich Zugriff auf meinen persönlichen Stundenplan?
+      - Kannst du mir erklären, wie ich meinen Stundenplan abrufe?
+      - Wo auf der Webseite finde ich die Option, meinen Stundenplan einzusehen?
+      - Welche Schritte sind notwendig, um meinen Stundenplan anzuzeigen?
+      - Wie kann ich meinen Stundenplan für das Semester einsehen?
+      - Welche Tools stehen mir zur Verfügung, um meinen Stundenplan zu überprüfen?
+      - Wie finde ich heraus, wann meine Vorlesungen stattfinden?
+  - intent: faq/stundenplan_export
+    examples: |
+      - Stundenplan exportieren
+      - Wie exportiere ich meinen Stundenplan im .ics-Kalenderformat?
+      - Gibt es eine Möglichkeit, meinen Stundenplan als .ics-Datei zu exportieren?
+      - Welche Schritte sind erforderlich, um meinen Stundenplan in einem Kalenderformat zu exportieren?
+      - Kann ich meinen Stundenplan für ein Kalenderprogramm exportieren? Wie mache ich das?
+      - Wo finde ich die Exportoption für meinen Stundenplan im .ics-Format?
+      - Gib mir eine Anleitung, wie ich meinen Stundenplan als .ics-Datei herunterladen kann.
+      - Welche Tools oder Funktionen stehen zur Verfügung, um meinen Stundenplan zu exportieren?
+  - intent: faq/stundenplan_import
+    examples: |
+      - Stundenplan importieren
+      - Wie übertrage ich meine Vorlesungszeiten in meinen Kalender im .ics-Format?
+      - Wie kann ich meinen exportierten Stundenplan in mein Kalenderprogramm integrieren?
+      - Wie importiere ich meinen Stundenplan in meinen Kalender?
+      - Kannst du mir erklären, wie ich meinen Stundenplan in meinem Kalender speichern kann?
+      - Welche Schritte sind notwendig, um meinen Stundenplan in meinen Kalender zu übertragen?
+      - Kannst du mir erklären, wie ich meinen Stundenplan in meinen Kalender einfügen kann?
+      - Welche Tools oder Funktionen stehen zur Verfügung, um meinen Stundenplan in meinen Kalender zu importieren?
+      - Wie kann ich meine Vorlesungszeiten in meinem Kalender anzeigen lassen?
+      - Gibt es eine Möglichkeit, meinen Stundenplan automatisch in meinen Kalender zu übernehmen?
+      - Wie kann ich meinen Stundenplan in Google Calendar oder Apple Calendar importieren?
+      - Welche Schritte sind erforderlich, um meinen Stundenplan in digitale Kalender zu übertragen, wie zum Beispiel Google Calendar?
+      - Kannst du mir erklären, wie ich meine Stundenplan-Datei in meinen digitalen Kalender einfügen kann?
+      - Wo finde ich die Option, meinen Stundenplan in Google Calendar oder Apple Calendar zu importieren?
+      - Wie übertrage ich meine Stundenplan-Datei in meinen digitalen Kalender?
+  - intent: faq/pruefung_anmelden
+    examples: |
+      - Prüfungen anmelden
+      - Wie melde ich mich für bevorstehende Prüfungen auf Horstl an?
+      - Welche Schritte sind notwendig, um Prüfungen im Voraus auf Horstl zu beantragen?
+      - Kannst du mir erklären, wie ich mich für Prüfungen auf Horstl registriere?
+      - Wo finde ich die Option, um mich für Prüfungen auf Horstl anzumelden?
+      - Gibt es eine Anleitung zur Prüfungsanmeldung auf der Horstl-Plattform?
+      - Welche Tools oder Funktionen stehen zur Verfügung, um mich für Prüfungen im Voraus anzumelden?
+      - Kannst du mir den Prozess beschreiben, wie ich mich für meine bevorstehenden Prüfungen auf Horstl einschreibe?
+      - Gib mir Informationen über die verfügbaren Prüfungstermine und wie ich mich anmelden kann.
+      - Wie überprüfe ich den Status meiner Prüfungsanmeldung auf Horstl?
+  # # Wollte ich nicht probieren, da ich mich sonst noch irgendwo abmelde
+  # - intent: faq/pruefung_abmelden
+  #   examples: |
+  #     - Wie kann ich mich von bevorstehenden Prüfungen auf Horstl abmelden?
+  #     - Welche Schritte sind erforderlich, um Prüfungen auf Horstl zu stornieren?
+  #     - Kannst du mir erklären, wie ich meine Anmeldung für Prüfungen auf Horstl rückgängig mache?
+  #     - Wo finde ich die Option, um mich von Prüfungen auf Horstl abzumelden?
+  #     - Gib mir eine Anleitung zum Abmelden von Prüfungen auf der Horstl-Plattform.
+  #     - Kannst du mir den Prozess beschreiben, wie ich meine Prüfungsanmeldung auf Horstl storniere?
+  #     - Gib mir Informationen darüber, wie ich meine Prüfungsanmeldung rückgängig machen kann.
+  #     - Wie überprüfe ich den Status meiner Abmeldung von Prüfungen auf Horstl?
+  # - intent: faq/pruefung_ummelden
+  #   examples: |
+  #     - Wie kann ich meine Prüfungstermine auf Horstl ummelden?
+  #     - Welche Schritte sind notwendig, um zwischen verschiedenen Prüfungsterminen für dasselbe Fach auf Horstl zu wechseln?
+  #     - Kannst du mir erklären, wie ich meine Prüfungsummeldung auf Horstl durchführe?
+  #     - Wo finde ich die Option, um meine Prüfungstermine auf Horstl zu ändern?
+  #     - Gibt es eine Anleitung zur Ummeldung von Prüfungen auf der Horstl-Plattform?
+  #     - Welche Tools oder Funktionen stehen zur Verfügung, um meine Prüfungstermine umzubuchen?
+  #     - Kannst du mir den Prozess beschreiben, wie ich zwischen verschiedenen Prüfungsterminen wählen kann?
+  #     - Gib mir Informationen darüber, wie ich meine Prüfungsummeldung vornehmen kann.
+  - intent: faq/notenspiegel
+    examples: |
+      - Notenspiegel
+      - Wie kann ich einen Notenspiegel auf Horstl einsehen?
+      - Kannst du mir erklären, wie ich den Notenspiegel eines Fachs auf Horstl einsehe?
+      - Wo finde ich die Option, um den Notenspiegel eines Fachs auf Horstl einzusehen?
+      - Gib mir eine Anleitung zur Ansicht eines Notenspiegels auf der Horstl-Plattform.
+      - Kannst du mir den Prozess beschreiben, wie ich meine Note auf Horstl vergleichen kann?
+      - Gib mir Informationen darüber, wie ich einen Notenspiegel abrufen kann.
+  - intent: faq/note_finden
+    examples: |
+      - Note finden
+      - Wie finde ich meine Note für ein bestimmtes Fach auf Horstl?
+      - Welche Schritte sind notwendig, um meine Note für ein Fach auf Horstl zu finden?
+      - Kannst du mir erklären, wie ich meine aktuelle Note für ein spezifisches Fach auf Horstl herausfinde?
+      - Wo finde ich die Option, um meine Note für ein Fach auf Horstl zu suchen?
+      - Gib mir eine Anleitung, wie ich meine Note für ein Fach auf der Horstl-Plattform finde.
+      - Welche Tools oder Funktionen stehen zur Verfügung, um meine Fachnote zu ermitteln?
+      - Kannst du mir den Prozess beschreiben, wie ich meine Note für ein bestimmtes Fach auf Horstl abrufe?
+      - Wie kann ich meine Note für ein Fach suchen?
+      - Wie überprüfe ich den aktuellen Stand meiner Note für ein bestimmtes Fach auf Horstl?
+  - intent: faq/belege
+    examples: |
+      - Belege
+      - Wie finde ich die Informationen über meine Semesterbeiträge auf der Horstl-Plattform?
+      - Welche Schritte sind notwendig, um meine Semesterbeiträge auf Horstl zu finden?
+      - Kannst du mir erklären, wie ich meine aktuellen Semesterbeiträge auf Horstl abrufe?
+      - Wo finde ich die Option, um meine Belege für die Semesterbeiträge auf Horstl zu suchen?
+      - Gibt es eine Anleitung zum Auffinden meiner Semesterbeiträge auf der Horstl-Plattform?
+      - Wie kann ich meine Belege für die Semesterbeiträge finden?
+      - Kannst du mir den Prozess beschreiben, wie ich meine Semesterbeiträge auf Horstl finde?
+      - Wie kann ich meine Belege für die Semesterbeiträge auf Horstl suchen?
+      - Wie überprüfe ich den aktuellen Status meiner Semesterbeiträge auf Horstl?
+  - intent: faq/bescheinigungen
+    examples: |
+      - Bescheinigungen
+      - Wie kann ich auf Horstl meine Studienbescheinigungen erstellen?
+      - Welche Schritte sind notwendig, um meine Studienbescheinigung auf der Horstl-Plattform zu generieren?
+      - Kannst du mir erklären, wie ich meine aktuelle Studienbescheinigung auf Horstl erstelle?
+      - Wo finde ich die Option, um meine Studienbescheinigungen auf Horstl zu erstellen?
+      - Wie kann ich meine benötigten Dokumente finden?
+      - Kannst du mir den Prozess beschreiben, wie ich meine Studienbescheinigungen auf Horstl generiere?
+      - Wie lade ich meine Studienbescheinigungen von Horstl herunter?
+      - Kannst du mir erklären, wie ich meine aktuellen Studienbescheinigungen von Horstl abrufe?
+  - intent: faq/more_help
+    examples: |
+      - Wo finde ich weitere Hilfe?
+      - Gibt es irgendwo Dokumentation zu Horstl?
+      - Wo finde ich die Dokumentation zu Horstl?
+      - Wo finde ich die FAQ zu Horstl?
+      - Wo ist die Doku?
+      - Wo finde ich mehr Information?
+
+  # Basic chatting
+
+  - intent: greet
+    examples: |
+      - hey
+      - hello
+      - hi
+      - hello there
+      - moin
+      - hallo
+      - hey dude
+      - Guten Morgen
+      - Guten Tag
+      - Guten Abend
+
+  - intent: goodbye
+    examples: |
+      - Auf Wiedersehen
+      - Ciao
+      - Tschau
+      - Bis später
+      - Bis bald
+      - Bis dann
+      - Bis zum nächsten Mal
+      - Tschüss
+      - Tschö
+      - Tschö mit ö
+      - Bye
+
+  - intent: affirm
+    examples: |
+      - cool
+      - Ja
+      - Klar
+      - Das kling gut
+      - Gerne
+      - Ja, bitte
+      - Ja, genau
+      - Ja, das ist in Ordnung
+      - Jup
+      - Jawohl
+      - Auf jeden Fall
+      - Auf alle Fälle
+      - Passt
+      - Genau
+      - J
+
+  - intent: deny
+    examples: |
+      - nein
+      - n
+      - Nope
+      - Nö
+      - nie
+      - Das denke ich nicht
+      - Das gefällt mir nicht
+      - auf keinen Fall
+      - nicht wirklich
+
+  - intent: mood_great
+    examples: |
+      - perfekt
+      - großartig
+      - Mir geht es super
+      - wunderbar
+      - Ich fühle mich sehr gut
+      - Ich bin großartig
+      - Ich bin erstaunlich
+      - Ich werde die Welt retten
+      - super aufgeregt
+      - sehr gut
+      - so perfekt
+      - gut
+
+  - intent: mood_unhappy
+    examples: |
+      - Mein Tag war furchtbar
+      - Ich bin traurig
+      - Ich fühle mich nicht sehr gut
+      - Ich bin enttäuscht
+      - Super traurig
+      - Ich bin so traurig
+      - traurig
+      - Sehr traurig
+      - unglücklich
+      - Nicht gut
+      - Nicht sehr gut
+      - Äußerst traurig
+      - So traurig
+      - Sehr traurig
+      - Mir geht es schlecht
+      - Ich bin nicht gut
+
+  - intent: bot_challenge
+    examples: |
+      - Was bist du?
+      - Wer bist du?
+      - Woher kommt dein Name?
+      - Bist du ein Bot?
+      - Sind Sie ein Bot?
+      - Bist du ein Mensch?
+      - Sind Sie ein Mensch?
+      - Spreche ich mit einem Bot?
+      - Spreche ich mit einem Menschen?

@@ -1,0 +1,78 @@
+version: "3.1"
+
+intents:
+  - faq
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+
+responses:
+  utter_faq/login:
+    - text: "In der Kopfzeile oben rechts gibt es zwei Felder und einen Button. Im ersten Feld mit dem Label 'Benutzerkennung' trägt man entweder seine FDAI Nummer (falls vorhanden) oder seinen Benutzernamen ein. Im benachbarten Feld mit dem Label 'Passwort' gibt man sein Passwort ein. Nachdem beides eingetragen ist, klickt man auf den 'Anmelden'-Button, der sich neben dem Passwort-Feld befindet."
+    - text: "In der Kopfzeile oben rechts sind zwei Felder und ein Button platziert. Im Feld mit der Bezeichnung 'Benutzerkennung' gibt man entweder seine FDAI Nummer (sofern vorhanden) oder seinen Benutzernamen ein. Im benachbarten Feld, das das Label 'Passwort' trägt, trägt man sein Passwort ein. Sobald beide Felder ausgefüllt sind, klickt man auf den 'Anmelden'-Button, der sich neben dem Passwort-Feld befindet."
+  utter_faq/logout:
+    - text: "Um sich abzumelden, befindet sich oben rechts in der Kopfzeile der rechteste Button, der wie ein Pfeil aussieht, der aus einem Rechteck herauszeigt. Klicken Sie darauf, um sich abzumelden."
+    - text: "Die Abmeldefunktion befindet sich in der oberen rechten Ecke der Kopfzeile und wird durch den rechtesten Button repräsentiert. Dieser Button hat das Symbol eines Pfeils, der aus einem Rechteck herausragt. Klicken Sie darauf, um sich abzumelden."
+  utter_faq/stundenplan:
+    - text: "Um den Stundenplan anzuzeigen, klicken Sie zuerst auf das Hamburger-Menü (☰). Dann wählen Sie im neuen Menü die Option 'Mein Studium' und anschließend 'Stundenplan'. Auf der daraufhin angezeigten Webseite wird Ihnen Ihr Stundenplan präsentiert, und Sie können den angezeigten Zeitraum über Dropdown-Menüs darüber anpassen."
+    - text: "Um Ihren Stundenplan einzusehen, betätigen Sie zunächst das Hamburger-Menü (☰). Dann navigieren Sie im neu erscheinenden Menü zu 'Mein Studium' und wählen abschließend 'Stundenplan'. Auf der sich öffnenden Webseite wird Ihr Stundenplan angezeigt, und Sie haben die Möglichkeit, den angezeigten Zeitraum über die obenstehenden Dropdown-Menüs anzupassen."
+  utter_faq/stundenplan_export:
+    - text: "Um Ihren Stundenplan zu exportieren, gehen Sie zunächst zu Ihrem Stundenplan in Horstl. Auf dieser Webseite finden Sie einen Link mit der Bezeichnung 'Daten für iCalendar (ics) exportieren'. Wenn Sie auf diesen Link klicken, wird Ihr kompletter Stundenplan (alle Semester) als .ics-Datei heruntergeladen. Diese Datei kann in den meisten Kalender-Apps geöffnet werden, wie zum Beispiel Google Kalender, Apple Kalender oder Outlook."
+    - text: "Der Export Ihres Stundenplans erfolgt, indem Sie zuerst zu Ihrem Stundenplan in Horstl navigieren. Auf dieser Seite sehen Sie einen Link mit der Aufschrift 'Daten für iCalendar (ics) exportieren'. Ein Klick auf diesen Link ermöglicht den Download Ihres gesamten Stundenplans (alle Semester) als .ics-Datei. Diese Datei kann in den meisten Kalender-Apps wie Google Kalender, Apple Kalender und Outlook geöffnet werden."
+  utter_faq/stundenplan_import:
+    - text: "Um Ihren Studienplan in Ihren eigenen Kalender zu importieren, müssen Sie zunächst den Studienplan als .ics-Datei exportieren. Anschließend können Sie diese Datei in den meisten Kalender-Apps importieren, indem Sie die Datei einfach mit der gewünschten App öffnen."
+    - text: "Um Ihren Studienplan in Ihren eigenen Kalender zu übertragen, exportieren Sie ihn zunächst als .ics-Datei. Danach können Sie diese Datei in den meisten Kalender-Apps importieren, indem Sie sie mit der gewünschten App öffnen."
+  utter_faq/pruefung_anmelden:
+    - text: "Um sich für Prüfungen anzumelden, öffnen Sie zunächst das Hamburger-Menü (☰). Im erscheinenden Menü wählen Sie 'Mein Studium' und dann 'Studienplaner mit Modulplan'. Auf der angezeigten Webseite finden Sie eine hierarchische Darstellung Ihres Studiengangs. Mit den '+' und '-' Symbolen können Sie untergeordnete Informationen ein- oder ausklappen. Wenn Sie ein Fach oder Modul (erkennbar am Puzzleteil-Symbol) aufklappen, sehen Sie die Veranstaltungen, für die Sie sich anmelden können, indem Sie auf 'Anmelden' klicken. Dadurch gelangen Sie zu einer weiteren Seite mit den verfügbaren Terminen für diese Veranstaltung, wo Sie erneut auf einen der 'Anmelden'-Buttons klicken können, um den gewünschten Termin auszuwählen."
+    - text: "Zur Anmeldung für Prüfungen gehen Sie zuerst zum Hamburger-Menü (☰). Dann wählen Sie im erscheinenden Menü 'Mein Studium' und anschließend 'Studienplaner mit Modulplan'. Auf der Webseite sehen Sie eine hierarchische Darstellung Ihres Studiengangs. Sie können untergeordnete Informationen mit den '+' und '-' Symbolen auf- oder zuklappen. Wenn Sie ein Fach oder Modul (erkennbar am Puzzleteil-Symbol) öffnen, finden Sie Veranstaltungen, für die Sie sich anmelden können, indem Sie auf 'Anmelden' klicken. Dies führt Sie zu einer weiteren Seite mit den verfügbaren Terminen für diese Veranstaltung, wo Sie erneut auf einen der 'Anmelden'-Buttons klicken können, um den gewünschten Termin auszuwählen."
+  utter_faq/gesamtnote:
+    - text: "Um Ihren Notenspiegel anzuzeigen, öffnen Sie zuerst das Hamburger-Menü (☰). Im erscheinenden Menü wählen Sie 'Mein Studium' und dann 'Leistungen'. Dort finden Sie unter 'Gesamtkonto' Ihren Notenspiegel."
+    - text: "Zur Ansicht Ihres Notenspiegels öffnen Sie zuerst das Hamburger-Menü (☰). Im daraufhin erscheinenden Menü wählen Sie 'Mein Studium' und anschließend 'Leistungen'. Hier können Sie unter 'Gesamtkonto' Ihren Notenspiegel einsehen."
+  utter_faq/note_finden:
+    - text: "Um eine Note zu finden, öffnen Sie zuerst das Hamburger-Menü (☰). Im Menü wählen Sie 'Mein Studium' und dann 'Leistungen'. Auf der daraufhin angezeigten Seite sehen Sie eine hierarchische Darstellung Ihrer Noten. Sie können Teile ein- oder ausklappen, indem Sie auf die '+' und '-' Symbole klicken. Ihre Note finden Sie unter 'Bewertung'."
+    - text: "Um eine Note zu finden, klicken Sie zuerst auf das Hamburger-Menü (☰). Im sich öffnenden Menü wählen Sie 'Mein Studium' und dann 'Leistungen'. Auf der Seite sehen Sie eine hierarchische Darstellung Ihrer Noten. Sie können Teile auf- oder zuklappen, indem Sie auf die '+' und '-' Symbole klicken. Ihre Note befindet sich unter 'Bewertung'."
+  utter_faq/notenspiegel:
+    - text: "Um einen Notenspiegel anzuzeigen, müssen Sie zuerst die 'Desktop-PC Ansicht' aktivieren, wenn Sie auf einem Mobilgerät sind. Danach öffnen Sie das Hamburger-Menü (☰). Im erscheinenden Menü wählen Sie 'Mein Studium' und dann 'Leistungen'. In der Baum-Ansicht suchen Sie durch Klicken auf die '+'-Symbole in der Hierarchie nach dem gewünschten Fach. In der Spalte 'Aktionen' auf der rechten Seite finden Sie bei den meisten Fächern ein Symbol in Form eines Säulendiagramms. Wenn Sie darauf klicken, wird Ihnen der Notenspiegel angezeigt."
+    - text: "Um Ihren Notenspiegel einzusehen, müssen Sie zuerst die 'Desktop-PC Ansicht' aktivieren, falls Sie ein Mobilgerät verwenden. Dann öffnen Sie das Hamburger-Menü (☰). Im Menü wählen Sie 'Mein Studium' und anschließend 'Leistungen'. In der Baumansicht suchen Sie durch Klicken auf die '+'-Symbole in der Hierarchie nach dem gewünschten Fach. Rechts in der Spalte 'Aktionen' finden Sie bei den meisten Fächern ein Symbol in Form eines Säulendiagramms. Durch Klicken darauf wird Ihnen der Notenspiegel angezeigt."
+  utter_faq/belege:
+    - text: "Um Belege zu finden, öffnen Sie zuerst das Hamburger-Menü (☰). Im Menü wählen Sie 'Mein Studium' und dann 'Studienservice'. Auf der daraufhin angezeigten Seite klicken Sie auf 'Zahlungen'. Hier finden Sie Informationen zu allen Zahlungen, die Sie auf Horstl getätigt haben."
+    - text: "Zur Suche nach Belegen öffnen Sie das Hamburger-Menü (☰). Anschließend gehen Sie im erscheinenden Menü zu 'Mein Studium' und dann zu 'Studienservice'. Auf der Seite, die daraufhin angezeigt wird, klicken Sie auf 'Zahlungen'. Hier erhalten Sie Informationen zu allen Zahlungen, die Sie auf Horstl durchgeführt haben."
+  utter_faq/bescheinigungen:
+    - text: "Um Ihre Studienbescheinigung zu finden, öffnen Sie zunächst das Hamburger-Menü (☰). Im Menü wählen Sie 'Mein Studium' und dann 'Studienservice'. Auf der angezeigten Seite klicken Sie auf 'Bescheide / Bescheinigungen'. Auf der daraufhin erscheinenden Seite wählen Sie 'Allgemein'. In der Übersicht, die nun angezeigt wird, können Sie nach der gewünschten Studienbescheinigung suchen und auf das Drucker-Symbol klicken, um die Bescheinigung als PDF zu speichern."
+    - text: "Zur Suche nach Ihrer Studienbescheinigung navigieren Sie zuerst zum Hamburger-Menü (☰). Danach klicken Sie im erscheinenden Menü auf 'Mein Studium' und dann auf 'Studienservice'. Auf der angezeigten Seite wählen Sie 'Bescheide / Bescheinigungen'. Auf der nun erscheinenden Seite wählen Sie 'Allgemein'. In der Übersicht können Sie nach der gewünschten Studienbescheinigung suchen und auf das Drucker-Symbol klicken, um die Bescheinigung als PDF zu speichern."
+  utter_faq/more_help:
+    - text: "Für weitere Hilfe kannst du auf die Seite des Rechenzentrums gehen:"
+      custom:
+        link: "https://doku.rz.hs-fulda.de/doku.php/docs:horstl:ueberblick"
+
+  # Basic chatting
+
+  utter_greet:
+    - text: "Hey! Wie geht's dir?"
+
+  utter_cheer_up:
+    - text: "Hier ist etwas um deine Stimmung zu verbessern:"
+      image: "https://cataas.com/cat/cute"
+
+  utter_did_that_help:
+    - text: "Hat das dir geholfen?"
+
+  utter_happy:
+    - text: "Super, weiter so!"
+
+  utter_goodbye:
+    - text: "Tschüss!"
+    - text: "Bye!"
+    - text: "Auf wiedersehen!"
+
+  utter_iamabot:
+    - text: "Ich bin ein Bot um dir bei Fragen zu horstl zu helfen. Horstl ist ein Hochschul-Organisations-System für Studium und Lehre. Es bietet vielfältige Funktionen, darunter das Belegen von Modulen, das An- und Abmelden von Prüfungen, das Verfolgen des Studienverlaufs, das Erhalten von Bescheinigungen wie Notenspiegel und Studienbescheinigungen sowie die Verwaltung persönlicher Daten und die Möglichkeit zur Rückmeldung zum Studium."
+    - text: "Ich bin horstl-bot. Das 'Hochschul-Organisations-System für Studium und Lehre' (Horstl) erleichtert Studium und Lehre erheblich. Zu seinen vielfältigen Funktionen zählen das Buchen von Modulen, das An- und Abmelden von Prüfungen, das Verfolgen des Studienverlaufs, das Ausstellen von Bescheinigungen wie Notenspiegel und Studienbescheinigungen sowie die Verwaltung persönlicher Daten und die Rückmeldung zum Studium."
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
